@@ -1,0 +1,56 @@
+#include <iostream>
+
+#define endl "\n"
+using namespace std;
+
+class Singleton {
+private:
+	int data;
+	static int counter;
+
+public:
+	Singleton() {
+		counter++;
+	}
+
+	void enter() {
+		cout << "Enter data: ";
+		cin >> data;
+	}
+
+	void display() {
+		cout << "The value is " << data << endl;
+	}
+
+	Singleton createObject() {
+		if(counter < 1) {
+            Singleton obj;
+			return obj;
+		}
+		return *this;
+	}
+};
+
+int Singleton:: counter = 0;
+
+int main() {
+    Singleton s;
+	Singleton s1 = s.createObject();
+	// s3 = s.createObject();
+
+	cout << &s1 << endl;
+
+	s1.enter();
+	// s2.enter();
+	// s3.enter();
+
+	s1.display();
+	// s2.display();
+	// s3.display();
+
+    Singleton s2 = s.createObject();
+    cout << &s2 << " " << &s1 << endl;
+
+	return 0;
+}
+hguyhjg
