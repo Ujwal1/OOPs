@@ -4,8 +4,8 @@ class mani_array
 {
 private:
     int n;
-    //hahahuhu
-    int *arr;;
+    //hahahuhujbfhidsfjdsnkjfnkjdssjjdjjd
+    int *arr;
 public:
     mani_array()
     {
@@ -54,4 +54,4 @@ int main()
     {
         cout << "Not Equal"<<endl;
     }
-}
+}//end of main
