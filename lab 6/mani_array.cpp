@@ -4,6 +4,7 @@ class mani_array
 {
 private:
     int n;
+    //hahahuhu
     int *arr;;
 public:
     mani_array()
