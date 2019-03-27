@@ -1,4 +1,5 @@
 #include<iostream>
+//haahuu
 using namespace std;
 class mani_array
 {
