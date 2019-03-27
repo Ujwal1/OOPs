@@ -54,4 +54,4 @@ int main()
             case 4: cout << "Exiting"<<endl;
         }
     }while(ch!=4);
-}
+}//end of main
